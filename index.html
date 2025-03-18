@@ -127,28 +127,6 @@
     .panel.color2, .panel.color2 .intro {
         background: linear-gradient(to bottom, purple, yellow) !important;
     }
-
-    .panel.color2 .intro,
-    .panel.color2 .intro p,
-    .panel.color2 .intro h2 {
-        color: black !important; /* simply makes text black for readability */
-    }
-}
-
-		@media (max-width: 768px) {
-    .panel.color2 .intro,
-    .panel.color2 .intro h2,
-    .panel.color2 .intro p {
-        color: white !important;
-        text-shadow: 
-            1px 1px 2px black, 
-            -1px -1px 2px black,
-            1px -1px 2px black, 
-            -1px -1px 2px black !important;
-    }
-}
-
-
 		
         </style>
     </head>
@@ -182,8 +160,24 @@
 
 							<!-- Panel -->
 <section class="panel">
-    <div class="intro color2">
-        <h2 class="major">Abstract</h2>
+    <div class="intro color2" style="
+        color: white !important;
+        text-shadow: 1px 1px 4px black !important;
+        font-size: 18px !important;
+        line-height: 1.4 !important;
+    ">
+        <h2 class="major" style="
+            color: white !important;
+            text-shadow: 1px 1px 3px black !important;
+            font-size: 1.8em !important;
+        ">
+            Abstract
+        </h2>
+        <p style="
+            color: white !important;
+            text-shadow: 1px 1px 3px black !important;
+            font-size: 1.2em !important;
+        ">
         <p>Breast cancer is a major global health concern, requiring early detection for better outcomes. The TIMM project is a proof-of-concept prototype using thermal imaging to study breast health. It features infrared sensors, an adjustable camera, and a user-friendly interface to analyze heat distribution. While not for diagnosis, it evaluates design feasibility, usability, and imaging accuracy.</p>
     </div>
                       
@@ -212,12 +206,22 @@
 <section class="panel banner color0">
     <div class="intro span-3-75" style="
         color: white !important;
-        text-shadow: 1px 1px 3px black !important;
+        text-shadow: 1px 1px 4px black !important;
+        font-size: 18px !important;
+        line-height: 1.4 !important;
     ">
-        <h2 class="major" style="color: white !important; text-shadow: 1px 1px 3px black !important;">
+        <h2 class="major" style="
+            color: white !important;
+            text-shadow: 1px 1px 3px black !important;
+            font-size: 1.8em !important;
+        ">
             Meet the Team
         </h2>
-        <p style="color: white !important; text-shadow: 1px 1px 3px black !important;">
+        <p style="
+            color: white !important;
+            text-shadow: 1px 1px 3px black !important;
+            font-size: 1.2em !important;
+        ">
         <p>Behind every great project is a team of dedicated individuals working together to bring ideas to life. Our team is a diverse group of engineers, project managers, and advisors, each bringing unique expertise and passion to the table. From design and structural engineering to project leadership and technical consulting, we collaborate to push boundaries, solve complex challenges, and drive innovation. Scroll through to meet the minds shaping our success!</p>
     </div>
 
