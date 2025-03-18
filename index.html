@@ -1,16 +1,70 @@
 <!DOCTYPE HTML>
-<!--
-    Ethereal by HTML5 UP
-    html5up.net | @ajlkn
-    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
     <head>
         <title>Ethereal by HTML5 UP</title>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <link rel="stylesheet" href="assets/css/main.css" />
         <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+        <style>
+            /* Ensure content fits within screen width */
+            body {
+                overflow-x: hidden;
+            }
+
+            /* Ensure the team section has space before and after */
+.team-container {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 30px 5%; /* Adds left/right space */
+    scroll-behavior: smooth;
+    margin-top: 30px; /* Extra space after intro */
+    margin-bottom: 80px; /* More space before the next section */
+}
+
+/* Add space on the left and right so the cards don’t touch edges */
+.team-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 50px; /* Space between cards */
+    justify-content: flex-start; /* Ensures horizontal scrolling works */
+    padding-left: 50px; /* Adds space before first card */
+    padding-right: 50px; /* Adds space after last card */
+}
+
+/* Ensure last team card doesn’t touch the next section */
+.team-card:last-child {
+    margin-right: 80px;
+}
+
+/* Make it look good on mobile */
+@media (max-width: 768px) {
+    .team-container {
+        overflow-x: scroll;
+        padding: 20px 3%;
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+
+    .team-wrapper {
+        flex-wrap: nowrap; /* Keeps horizontal scrolling */
+        gap: 20px; /* Less space between cards for mobile */
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .team-card {
+        width: 85%; /* Slightly larger cards on mobile */
+        max-width: 270px;
+    }
+
+    .team-card:last-child {
+        margin-right: 40px; /* Less margin for last card on mobile */
+    }
+}
+        </style>
     </head>
     <body class="is-preload">
 
@@ -19,6 +73,7 @@
 
                 <!-- Wrapper -->
                     <div id="wrapper">
+
 
                         <!-- Panel (Banner) -->
                             <section class="panel banner right">
